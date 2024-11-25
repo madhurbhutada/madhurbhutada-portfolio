@@ -3,57 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Madhur Bhutada - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <h1>Your Name</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">
+                <h1><span class="typing-animation">Madhur Bhutada</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about"><i class="ri-user-line"></i> About</a></li>
+                <li><a href="#projects"><i class="ri-code-box-line"></i> Projects</a></li>
+                <li><a href="#skills"><i class="ri-tools-line"></i> Skills</a></li>
+                <li><a href="#responsibility"><i class="ri-medal-line"></i> Responsibilities</a></li>
+                <li><a href="#footer-container"><i class="ri-contacts-line"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief introduction about yourself and your goals.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <!-- Repeat this block for each project -->
-            <div class="project-item">
-                <h3>Project Title</h3>
-                <p>Short description of the project. <a href="link-to-project">View on GitHub</a></p>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <figure class="about-image">
+                    <img src="assets/images/your-image.jpg" alt="Madhur Bhutada">
+                </figure>
+                <div class="about-text">
+                    <h2>Hey, I'm Madhur! 👋</h2>
+                    <p>
+                        A passionate CS(AI & ML) student at VIT Pune, specializing in software development and data science.
+                        I love building innovative solutions and exploring cutting-edge technologies.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#footer-container" class="btn btn-primary">Contact Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <article class="project-item">
+                    <h3>SecurePass Manager</h3>
+                    <ul>
+                        <li>Developed a hash table-based password generator and manager in C with collision resolution.</li>
+                        <li>Implemented C.R.U.D. operations for password management and full hash table viewing.</li>
+                        <li>Efficiently managed dynamic memory to prevent resource leaks.</li>
+                    </ul>
+                </article>
+                <article class="project-item">
+                    <h3>Operating System Simulator</h3>
+                    <ul>
+                        <li>Simulated a virtual memory-based operating system in C++ with a 300-slot memory allocation table.</li>
+                        <li>Integrated memory allocation with page tables and process control blocks (PCB) to track execution.</li>
+                        <li>Handled error states like out-of-bounds access, opcode errors, and page faults effectively.</li>
+                    </ul>
+                </article>
+                <article class="project-item">
+                    <h3>Airline Satisfaction Prediction</h3>
+                    <ul>
+                        <li>Analyzed 129k flight records to predict customer satisfaction, achieving 96.02% accuracy using Random Forest.</li>
+                        <li>Pre-processed data, conducted EDA, and handled missing values using R with ggplot2 for visualization.</li>
+                        <li>Implemented and compared multiple ML models including KNN, Logistic Regression, and Decision Trees.</li>
+                    </ul>
+                </article>
+                <article class="project-item">
+                    <h3>Document Reader</h3>
+                    <ul>
+                        <li>Developed a document processing system using Python libraries like OpenCV, imutils, and pytesseract.</li>
+                        <li>Enhanced document readability through precise cropping and text extraction.</li>
+                        <li>Integrated a text-to-speech feature using pyttsx3 for automatic narration of extracted text.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C/C++</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>OpenCV</li>
+                        <li>pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>seaborn</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <ul>
+                        <li>GitHub</li>
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>Google Colab</li>
+                        <li>Jupyter Notebook</li>
+                        <li>PyCharm</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Data Exploration and Analysis</li>
+                        <li>Data Cleaning</li>
+                        <li>Model Validation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Presentation</li>
+                        <li>Critical Thinking</li>
+                        <li>Decision Making</li>
+                        <li>Stakeholder Collaboration</li>
+                        <li>Problem-Solving</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Coursework</h3>
+                    <ul>
+                        <li>Operating Systems</li>
+                        <li>DBMS</li>
+                        <li>Computer Networks</li>
+                        <li>Design and Analysis of Algorithms</li>
+                        <li>OOP</li>
+                        <li>Machine Learning</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsibilities Section -->
+        <section id="responsibility">
+            <h2>Positions of Responsibility</h2>
+            <div class="responsibility-list">
+                <article class="responsibility-item">
+                    <h3>Vice President, Computer Society of India (CSI), Student Branch, VIT Pune</h3>
+                    <p><strong>June 2024 — Present</strong></p>
+                    <ul>
+                        <li>Organized an MLOps speaker session, promoting knowledge-sharing among students.</li>
+                        <li>Coordinated a Git and GitHub workshop for the CSI team, enhancing hands-on learning and collaboration.</li>
+                    </ul>
+                </article>
+                <article class="responsibility-item">
+                    <h3>Coordinator, Social Welfare and Development Committee</h3>
+                    <p><strong>Aug 2023 — June 2024</strong></p>
+                    <ul>
+                        <li>Led as Function Executive Head for the Blood Donation Drive, achieving a record 616 donors in two days.</li>
+                        <li>Managed a team of volunteers for the 'Swaccha Pune' cleanliness drive, removing thousands of kilograms of waste from Taljai Tekdi and Mula Mutha Riverside.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer-container">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/madhur-bhutada/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/madhurbhutada" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="mailto:madhur.bhutada04@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+                <a href="https://leetcode.com/u/madhurbhutada/" target="_blank" aria-label="LeetCode"><i class="ri-code-s-slash-line"></i></a>
+            </div>
+            <p>Madhur Bhutada. 2024.</p>
         </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Language 1</li>
-            <li>Programming Language 2</li>
-            <!-- Add more skills -->
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="your-linkedin-url">Your LinkedIn</a></p>
-        <p>GitHub: <a href="your-github-url">Your GitHub</a></p>
-    </section>
-    
-    <footer>
-        <p>© 2024 Your Name. All Rights Reserved.</p>
     </footer>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
